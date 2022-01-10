@@ -8,9 +8,7 @@ package strings;
 public class RotateMatrix {
 
 	public static void main(String[] args) {
-		/*
-		 * 8 7 5 7 0 7 9 9 1
-		 */
+
 		int[][] matrix= new int[][]{{8,7,5,3},{7,0,7,4},{9,9,1,5},{6,7,5,8}};
 
 		rotateMatrix(matrix);
