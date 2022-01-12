@@ -15,10 +15,15 @@ public class KthToLastElement {
 		Node returnNode=returnKthToLast(node,3);
 
 		System.out.println(printLinkedList(returnNode));
+
+		Node resultNode=returnKthToLastNode(node,3);
+
+		System.out.println(printLinkedList(resultNode));
+
 	}
 
 	/**
-	 * Function to retun node following kth value
+	 * Function to return all node following kth value till end
 	 * 
 	 * @param node
 	 * @param i
@@ -40,6 +45,31 @@ public class KthToLastElement {
 
 		return n;
 
+	}
+
+
+	/**
+	 * Function to return node which is at kth position from end
+	 * 
+	 * @param node
+	 * @param i
+	 * @return
+	 */
+	private static Node returnKthToLastNode(Node node, int k) {
+
+		Node node1= node;
+		Node node2=node; 
+
+		for(int i=0; i<k;i++) {
+			node1= node1.next;
+		}
+
+		while(node1.next !=null) {
+			node1=node1.next;
+			node2=node2.next;
+		}
+
+		return node2;
 	}
 
 	// sample linked list for testing
