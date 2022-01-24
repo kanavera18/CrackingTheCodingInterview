@@ -17,7 +17,7 @@ public class CountSubsetSum {
 	 * @param sum
 	 * @return
 	 */
-	private static int countSubsetSum(int[] array, int sum) {
+	public static int countSubsetSum(int[] array, int sum) {
 
 		int[][] matrix= new int[array.length +1][sum+1];
 

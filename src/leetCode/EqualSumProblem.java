@@ -30,7 +30,7 @@ public class EqualSumProblem {
 		}
 
 		else{
-			return SubsetSumProblem.subsetProblem(array, sum/2);
+			return SubsetSumProblem.subsetProblemReturnBoolean(array, sum/2);
 
 		}
 	}
